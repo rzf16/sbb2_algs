@@ -1,6 +1,11 @@
 # Smart Black Box
 The Smart Black Box (SBB) is an intelligent data recorder for video which prioritizes the storage and quality of notable data and compresses or discards insignificant data. An offline SBB is implemented here.
 
+## Overview
+The diagram below displays the SBB pipeline.
+![SBB Pipeline](https://github.com/rzf16/sbb2_algs/blob/main/Diagram.jpg?raw=true)
+In this offline implementation, the outputs of the orange boxes have already been computed and can be provided directly to the SBB. Anomaly detection is performed using [TAD](https://arxiv.org/abs/1903.00618), and action detection is performed using a [TRN](https://arxiv.org/abs/1811.07391).
+
 ## Usage
 ```bash
 python3 sbb.py <directory of images> <vad scores> <oad scores> <object tracking output>
