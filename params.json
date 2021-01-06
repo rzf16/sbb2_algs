@@ -1,0 +1,24 @@
+{
+    "major_buffer_max" : 600,
+    "wait_buffer_max" : 150,
+    "pre_buffer_min" : 60,
+    "similarity_threshold" : 0.5,
+    "value_threshold" : 0.2,
+    "filter_sigma" : 3,
+    "eta" : 0.9,
+    "zeta" : 1.7,
+
+    "class_values": [0.977, 0.635, 0.633, 0.816, 0.395, 0.957, 0.995, 0.525, 1.0, 0.521, 0.491, 0.546, 0.342, 1.0, 0.990, 0.576],
+    "value_type": "hybrid",
+    "hybrid_value_alpha": 1,
+    "hybrid_value_beta": 1,
+    "confusion_prior_init" : {
+        "VAD" : [[65589,23681],[18793,23617]],
+        "OAD" : [[65589,23681],[18793,23617]]
+    },
+    "class_prob_prior_init" : [50,50],
+
+    "fifo" : 0,
+    "max_memory_mb" : 8192,
+    "inflation_factor": 1.001
+}
